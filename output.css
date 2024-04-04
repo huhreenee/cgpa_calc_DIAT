@@ -2002,6 +2002,10 @@ video {
   padding: 8rem;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
