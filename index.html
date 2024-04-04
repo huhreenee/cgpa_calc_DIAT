@@ -4,28 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CGPA Calculator</title>
+    <link href="/output.css" rel="stylesheet" />
   </head>
   <body>
-    <main>
-      <input type="number" name="sem1_credits" id="sem1_credits" value="26" />
-      <input type="number" name="sem2_credits" id="sem2_credits" value="24" />
-      <input type="number" name="sem3_credits" id="sem3_credits" value="14" />
+    <!-- header starts -->
+    <header class="bg-cyan-500 text-white top-0 z-10">
+      <section class="py-4 flex justify-between items-center m-auto w-4/5">
+        <h1 class="text-4xl pr-4 font-light">
+          <a href="#car" id="main-header-text"
+            >Danish Institute of Andshand Technology CGPA Calculator</a
+          >
+        </h1>
+      </section>
+    </header>
+    <!-- header end-->
+    <main class="w-4/5 mx-auto py-20">
+        
+      <input type="text" class="border border-black" name="sem1_credits" id="sem1_credits" value="26"  />
+      <input type="text" class="border border-black" name="sem2_credits" id="sem2_credits" value="24" />
+      <input type="text" class="border border-black" name="sem3_credits" id="sem3_credits" value="14" />
       <input
-        type="number"
-        name="sem4_credits"
+        type="text"
+        class="border border-black" name="sem4_credits"
         id="sem4_credits"
         value="14"
-      /><input type="number" name="sem1_sgpa" id="sem1_sgpa" />
-      <input type="number" name="sem2_sgpa" id="sem2_sgpa" /><input
-        type="number"
-        name="sem3_sgpa"
+      /><input type="text" class="border border-black" name="sem1_sgpa" id="sem1_sgpa" />
+      <input type="text" class="border border-black" name="sem2_sgpa" id="sem2_sgpa" /><input
+        type="text"
+        class="border border-black" name="sem3_sgpa"
         id="sem3_sgpa"
       />
-      <input type="number" name="sem4_sgpa" id="sem4_sgpa" />
+      <input type="text" class="border border-black" name="sem4_sgpa" id="sem4_sgpa" />
       <button id="Calculate">Calculate</button>
       <span id="result"></span>
     </main>
   </body>
   <script src="index.js"></script>
-
 </html>
